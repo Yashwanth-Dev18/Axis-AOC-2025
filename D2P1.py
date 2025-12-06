@@ -1,4 +1,3 @@
-
 def verify():
   with open("D2P1_input.txt") as f:
     sum = 0
