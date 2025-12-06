@@ -30,10 +30,9 @@ def verify():
             sum += num
             break
           else:
-              index += 1
+            index += 1
         
 
   return sum
-
 
 print(verify())
