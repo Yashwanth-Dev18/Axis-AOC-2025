@@ -32,19 +32,9 @@ def playground():
       if boxA in circuit or boxB in circuit:
         if boxA not in circuit:
           circuit.append(boxA)
-          in_circuit = True
-          temp_circuit = circuit
-          continue
         if boxB not in circuit:
           circuit.append(boxB)
-          in_circuit = True
-          temp_circuit = circuit
-          continue
-      
-      for box in temp_circuit:
-        if box in circuit:
-          temp_circuit.remove(box)
-          circuit.extend(temp_circuit)
+        in_circuit = True
     
     if not in_circuit:
       circuits.append([boxA, boxB])
